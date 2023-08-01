@@ -7,55 +7,90 @@
 </head>
 <body>
     <main>
-        <section id="formulario">
-            <h1>Send us a Message</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus non nihil consectetur, mollitia consequuntur repellat. Harum quia quibusdam modi! Sequi repellendus facere modi ab doloremque animi aliquam voluptatem quod?</p>
-            <form action="./mensaje.html">
-                <div>
-                    <label for="name" >Your name</label>
-                    <input name="name" type="name" placeholder="Enter your name">
-                </div>
-                <div>
-                    <label for="email">Your email</label>
-                    <input name="email"  type="email" placeholder="Enter your email" >
-                </div>
-                <div>
-                    <label for="message">New message</label>
-                    <div>
-                        <textarea name="message"  type="textarea" placeholder="Enter your message" ></textarea>
-                    </div>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-        <section id="contactInfo">
-            <article>
-                <h2>Contact Information</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore temporibus perferendis quis quas praesentium odit.</p>
-            </article>
-            <article>
-                <h2>Adress</h2>
-                <p>Long Street, Miami, USA</p>
-            </article>
-            <article>
-                <h2>Phone</h2>
-                <p>#3730-45-45-67</p>
-            </article>
-            <article>
-                <h2>Email</h2>
-                <p>green@gmail.com</p>
-            </article>
-            <article>
-               <nav>
-                <ul>
-                    <li>Facebook</li>
-                    <li>twitter</li>
-                    <li>instagram</li>
-                    <li>youtube</li>
-                    <li>google</li>
-                </ul>
-               </nav>
-            </article>
+        <section>
+            <section id="formulario">
+                <header>
+                    <h1>Send us a Message</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusamus non nihil consectetur, mollitia consequuntur repellat. Harum quia quibusdam modi! Sequi repellendus facere modi ab doloremque animi aliquam voluptatem quod?</p>
+                </header>
+                <form action="./mensaje.html">
+                    <section>
+                        <section>
+                            <article>
+                                <label for="nombre">Ingrese Nombre</label>
+                                <input id="nombre" autofocus type="text" placeholder="Nombre" required minlength="3">
+                            </article>
+                            <article>
+                                <label for="email">Ingrese Email</label>
+                                <input id="email" type="email" placeholder="Email" required>
+                            </article>
+                            <article>
+                                <label for="password">Ingrese Contraseña</label>
+                                <input id="password"  minlength="6"  type="password" placeholder="Contraseña " required />
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <label for="numberPhone">Numero telefonico</label>
+                                <input id="numberPhone" min="0" max="999999999" type="number" placeholder="Numero telefonico" required>
+                            </article>
+                            <article>
+                                <label for="color">Seleccione un color </label>
+                                <input id="color" type="color" >
+                            </article>
+                            <article>
+                                <label for="fecha">Seleccione una fecha </label>
+                                <input id="fecha" type="date"  required>
+                            </article>
+                            <article>
+                                <label for="rango">Seleccione una rango </label>
+                                <input id="rango" type="range"  required>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <label for="numberPhone">Mensaje</label>
+                                <div>
+                                    <textarea id="numberPhone" rows="5" cols="38" minlength="6" maxlength="300"  type="textarea" placeholder="Nuevo Mensaje" required></textarea>
+                                </div>
+                            </article>
+                        </section>
+                    </section>
+            
+                    <section>
+                        <button  type="submit">Enviar Datos</button>
+                    </section>
+                </form>
+            </section>
+            <section id="contactInfo">
+                    <header>
+                        <h2>Contact Information</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore temporibus perferendis quis quas praesentium odit.</p>
+                    </header>
+                    <section>
+                        <article>
+                            <h3>Adress</h3>
+                            <p>Long Street, Miami, USA</p>
+                        </article>
+                        <article>
+                            <h3>Phone</h3>
+                            <p>#3730-45-45-67</p>
+                        </article>
+                        <article>
+                            <h3>Email</h3>
+                            <p>green@gmail.com</p>
+                        </article>
+                        <article>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>twitter</li>
+                                <li>instagram</li>
+                                <li>youtube</li>
+                                <li>google</li>
+                            </ul>
+                        </article>
+                    </section>
+            </section>
         </section>
     </main>
 </body>
